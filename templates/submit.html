@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+    <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>按图索骥</title>
+        <!-- add styles -->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- add scripts -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/jquery.Jcrop.min.js"></script>
+        <script src="static/js/script.js"></script>
+    </head>
+    <body>
+<div class="outside">
+                <!-- upload form -->
+                <form id="upload_form" enctype="multipart/form-data" method="post" action="search" onsubmit="return checkForm()">
+                    <!-- hidden crop params -->
+                    <input type="hidden" id="x1" name="x1" />
+                    <input type="hidden" id="y1" name="y1" />
+                    <input type="hidden" id="x2" name="x2" />
+                    <input type="hidden" id="y2" name="y2" />
+                    <input type="hidden" id="w" name="w" />
+                    <input type="hidden" id="h" name="h" />
+
+<!--                    <h2>选择文件</h2>-->
+                    <div class="search">
+                    <div class=“s-bar”>
+                    <i></i>
+                    <input style="opacity:0"type="file" name="img" id="image_file" onchange="fileSelectHandler()" />
+
+        </div>
+        </div>
+
+<!--                    <div class="error"></div>-->
+
+                    <div class="step2">
+<!--                        <h2>选择截图</h2>-->
+                        <img id="preview" style="visibility:visible" />
+
+                        <div class="info1"  style="opacity:0">
+                            <label>文件大小</label> <input type="text" id="filesize" name="filesize" />
+                            <label>类型</label> <input type="text" id="filetype" name="filetype" />
+                            <label>图像尺寸</label> <input type="text" id="filedim" name="filedim" />
+                            <label>宽度</label> <input type="text" id="w" name="w" />
+                            <label>高度</label> <input type="text" id="h" name="h" />
+                        </div>
+
+                        <input type="submit" value="上传" />
+                    </div>
+                </form>
+
+
+
+
+</div>
+<!--search end here-->
+<div class="copyright">
+	 <p>2016 &copy Beijing University of Posts and Telecomminications<a href="http://www.bupt.edu.cn"> (BUPT)</a> <br> Queen Mary University of London<a href="http://qmul.ac.uk"> (QMUL)</a><br>Designed by Antu Group</p>
+</div>
+
+</body>
+</html>

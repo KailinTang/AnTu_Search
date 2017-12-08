@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Here are the results</h1>
+
+    <p>请依照源代码自行修改</p>
+
+    <p>
+        各参数的说明请点击下面的链接:<br>
+        <a href="/info/414981"> link </a>
+    </p>
+
+    <table id="id_list_table" class="table">
+        {% for item in list1 %}
+            <tr>
+                <td>
+                    id:{{  item.id }} <br>
+                    Title: {{ item.Title }} <br>
+                    imdir: {{ item.imdir }}<br>
+                    RMB: {{ item.RMB }}<br>
+                    infolink: {{ item.infolink }} <br>
+                    <img src={{ item.imdir }}> <br>
+                    <a href={{ item.infolink }}> infolink example </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+<h1>Here are what we suggests</h1>
+
+    <table id="id_list_table" class="table">
+            <tr>
+                <td>
+                    id:{{  list2.1.id }} <br>
+
+                </td>
+            </tr>
+    </table>
+
+</body>
+</html>
